@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+font-family: "Archivo Black", sans-serif;
+}
+
+body{
+    background-color: #023047;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+h1 {
+    height: 100px;
+    text-align: center;
+    background-color: #3a86ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.inputs {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 0;
+}
+
+input.user-url {
+    height: 5rem;
+    width: 55%;
+    border: 6px solid #00b4d8;
+    border-radius: 11px;
+    padding-left: 1rem;
+    font-size: 1.3rem;
+}
+
+button.btn {
+    height: 4rem;
+    width: 35%;
+    border: none;
+    margin: 1rem 0;
+    border-radius: 11px;
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: #00b4d8;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:focus{
+    background-color: #023047;
+}
+
+p {
+    font-size: 1rem;
+    color: red;
+    font-weight: bold;
+    /* background-color: #000000; */
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+input#color {
+    height: 4rem;
+    width: 10rem;
+    border: none;
+    border-radius: 12%;
+    margin: 1rem;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 2rem;
+    border-radius: 1rem;
+    border: 6px solid #669bbc;
+    margin: 0 3rem;
+}
+
+img#QR-Image {
+    height: 200px;
+    width: 200px;
+    border: 6px solid black;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.downloade {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    position: relative;
+}
+
+.down-btn{
+        display: none;
+        background-color: #fca311;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.loader {
+    height: 100px;
+    width: 100px;
+    background: transparent;
+    display: none;
+    align-items: center;
+    color: black;
+    position: absolute;
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+}
+
+@keyframes loadingPoints {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+
+.points
+ {
+    display: flex;
+    height: 16px;
+    width: 16px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.point1{
+       animation:  loadingPoints 1s infinite ease-in-out;
+       animation-delay: 0s;
+
+}
+
+.point2{
+       animation:  loadingPoints 1s infinite ease-in-out;
+       animation-delay: 0.2s;
+}
+
+.point3{
+       animation:  loadingPoints 1s infinite ease-in-out;
+       animation-delay: 0.4s;
+}
+
+.point4{
+       animation:  loadingPoints 1s infinite ease-in-out;
+       animation-delay: 0.8s;
+}

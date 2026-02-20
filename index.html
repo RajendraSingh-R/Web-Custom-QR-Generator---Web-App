@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick QR Generator</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <div class="inputs">
+            <input class="user-url"   type="text" placeholder="Enter Your URL">
+            <button class="btn">Generate QR</button>
+        </div>
+        <label for="color">
+             Create Custom color QR
+            <input type="color" id="color">
+        </label>
+        <div class="downloade">
+            <div class="loader">
+                <div class="points point1"></div>
+                <div class="points point2"></div>
+                <div class="points point3"></div>
+                <div class="points point4"></div>
+            </div>
+            <img  id="QR-Image" alt="">
+            <button class="btn down-btn">Downloade QR Code </button>
+        </div>
+        <!-- <img src="https://api.qrserver.com/v1/create-qr-code/?data=HelloWorld&amp;size=100x100" alt="" title="" /> -->
+    </div>
+    
+
+
+
+    <script src="/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+</body>
+</html>
